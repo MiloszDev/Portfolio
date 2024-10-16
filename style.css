@@ -173,8 +173,12 @@ body.loaded .loading-screen {
     margin-bottom: 500px;
 }
 
-.navbar.box {
-    background: slateblue;
+.navbar.box{
+    background-color: #fff;
+}
+
+.navbar.box * {
+    color: #1f242d;
 }
 
 .auto-type {
@@ -205,4 +209,214 @@ body.loaded .loading-screen {
 
 .home-img .img-box .img-item img {
     position: absolute;
+}
+
+/* Ekrany poniżej 768px - Tablety i mniejsze */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    .navbar ul {
+        gap: 20px;
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+    }
+
+    .home-info h1 {
+        font-size: 45px;
+    }
+
+    .home-info h2 {
+        font-size: 28px;
+    }
+
+    .home-info p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .home-img .img-box {
+        width: 50vw;
+        height: 50vw;
+    }
+}
+/* Ekrany poniżej 576px - Smartfony */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px 5%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul li {
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .home {
+        flex-direction: column;
+        padding: 20px 5% 0;
+    }
+
+    .home-info h1 {
+        font-size: 32px;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .home-info h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .home-info p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .home-info .btn-sci {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-info .btn {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .home-info .sci {
+        margin-top: 15px;
+    }
+
+    .home-info .sci a {
+        font-size: 18px;
+    }
+
+    .home-img {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-img .img-box {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .home-img .img-box .img-item img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Ekrany poniżej 400px - Małe smartfony */
+@media (max-width: 400px) {
+    .home-info h1 {
+        font-size: 28px;
+    }
+
+    .home-info h2 {
+        font-size: 18px;
+    }
+
+    .home-info p {
+        font-size: 12px;
+    }
+
+    .home-info .btn {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+
+    .home-img .img-box {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .home-img .img-box .img-item img {
+        width: 85%;
+    }
+}
+
+
+/* Ekrany poniżej 992px - Małe laptopy */
+@media (max-width: 992px) {
+    .home {
+        padding: 50px 7% 0;
+    }
+
+    .home-info h1 {
+        font-size: 50px;
+    }
+
+    .home-info h2 {
+        font-size: 30px;
+    }
+
+    .home-info p {
+        font-size: 15px;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+
+    .home-img .img-box {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .home-img .img-box .img-item img {
+        width: 90%;
+    }
+}
+
+/* Ekrany powyżej 992px - Desktopy */
+@media (min-width: 992px) {
+    .navbar ul {
+        gap: 35px;
+    }
+
+    .navbar ul li a {
+        font-size: 20px;
+    }
+
+    .home-info h1 {
+        font-size: 55px;
+    }
+
+    .home-info h2 {
+        font-size: 32px;
+    }
+
+    .home-info p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .home-img .img-box {
+        width: 32vw;
+        height: 32vw;
+    }
 }
